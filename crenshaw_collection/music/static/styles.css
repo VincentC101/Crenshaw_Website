@@ -1,13 +1,13 @@
 
 @font-face {
     font-family: "booter - zero zero";
-    src: url("font/academic-m54-font/AcademicM54-po1Z.ttf") format(woff);
+    src: url("/media/font/academic-m54-font/AcademicM54-po1Z.ttf") format(woff);
     font-weight: normal;
     font-style: normal;
 }
-* {
+body {
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color:rgb(37, 37, 37)
 }
 
@@ -48,7 +48,7 @@ html, body {
 
 .main-header {
     background-color: rgba(150, 127, 255, 0.9);
-    background-image: url("Images/VectorBackground2.jpeg");
+    background-image: url("/media/Images/VectorBackground2.jpeg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
@@ -279,4 +279,167 @@ width: 350px;
     flex-wrap: wrap;
     gap: 10px; 
     justify-content: left;
+}
+
+
+
+/* MUSIC */
+
+
+
+body.music {
+    background-color: #171825;
+}
+
+h2.music{
+    color: #fff;
+    font-size: 5em;
+    font-weight: bold;
+    font-family: 'Helvetica', sans-serif;
+}
+
+.home-link {
+  color: #6ee0ff;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  transition: color 0.3s ease;
+}
+
+.home-link:hover {
+  color: #ff6ef5;
+}
+
+.music-table,
+.music-table table,
+.music-table th,
+.music-table td {
+  color: #fff;
+}
+
+.music-table table,
+.music-table th,
+.music-table td {
+  border: 1px solid #fff;
+  border-collapse: collapse;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.music-table th,
+.music-table td {
+  padding: 10px;
+}
+
+
+
+
+/* NEWS */
+
+
+.news {
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(249, 243, 236);
+
+}
+
+.nav-news a:hover {
+    background-color: rgb(104, 49, 1);
+}
+
+.main-header-news {
+    background-color: rgba(200, 177, 150, 0.9);
+    background-size: cover;
+}
+
+.news-headliner {
+    font-family: 'Luminari', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.article-header {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+.article-header a:any-link {
+    color:rgb(14, 199, 156);
+}
+
+.article-header a:hover {
+    color:rgb(104, 49, 1)
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 3px;
+  background-color: rgb(13, 11, 11);
+  margin: 20px;
+}
+
+.split-section {
+    display: flex;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.left {
+    left: 0;
+}
+
+.left2 {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-right: 3px solid #333;
+}
+
+.right {
+    right: 0;
+}
+
+.right2 {
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.hr1 {
+    margin-bottom: 1cm;
+    margin-top: 1cm;
+}
+
+.split-section-music {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+
+.split2 {
+  height: 100%;
+  width: 90%;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+}
+
+.ahmusic {
+    font-size: 1.5rem;
+}
+
+.smaller-text {
+    font-size: 0.85rem;
 }

@@ -25,18 +25,3 @@ e.onchange = changes;
 f.onchange = changes;
 changes();
 
-/*
-consoleImages.forEach((outfit)=> {
-    if(changes()[0] == "allcolors") {
-        //outfit.style.display = "block"
-        console.log(changes()[0])
-    } else {
-       if (outfit.classList.contains(changes()[0])){
-        //outfit.style.display = "block"
-        console.log(changes()[0])
-       } else {
-        outfit.style.display = "none"
-       }
-    }
-})
-*/
